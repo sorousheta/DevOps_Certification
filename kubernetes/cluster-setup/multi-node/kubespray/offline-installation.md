@@ -29,15 +29,15 @@ in [your inventory](/inventory/sample/group_vars/all/offline.yml) to match your 
 
 ```yaml
 ## Global Offline settings
-files_repo: "https://repo.mecan.ir/repository/file/"
+files_repo: "https://repo.mecan.ir/repository/kube"
 
 ### If using Debian
-debian_repo: "https://repo.mecan.ir/repository/debian/"
-debian_docker_repo: "https://repo.mecan.ir/repository/debian-docker/"
+debian_repo: "https://repo.mecan.ir/repository/debian"
+debian_docker_repo: "https://repo.mecan.ir/repository/debian-docker"
 
 ### If using Ubuntu
-ubuntu_repo: "https://repo.mecan.ir/repository/ubuntu/"
-ubuntu_docker_repo: "https://repo.mecan.ir/repository/ubuntu-docker/"
+ubuntu_repo: "https://repo.mecan.ir/repository/ubuntu"
+ubuntu_docker_repo: "https://repo.mecan.ir/repository/ubuntu-docker"
 
 ## Container Registry overrides
 kube_image_repo: "k8s.mecan.ir"
@@ -47,7 +47,7 @@ docker_image_repo: "hub.mecan.ir"
 quay_image_repo: "quay.mecan.ir"
 
 ## Kubernetes components
-kubeadm_download_url: "{{ files_repo }}/dl.k8s.io/release/{{ kubeadm_version }}/bin/linux/{{ image_arch }}/kubeadm"
+kubeadm_download_url: "{{ files_repo }}/dl.k8s.io/release/{{ kube_version }}/bin/linux/{{ image_arch }}/kubeadm"
 kubectl_download_url: "{{ files_repo }}/dl.k8s.io/release/{{ kube_version }}/bin/linux/{{ image_arch }}/kubectl"
 kubelet_download_url: "{{ files_repo }}/dl.k8s.io/release/{{ kube_version }}/bin/linux/{{ image_arch }}/kubelet"
 
