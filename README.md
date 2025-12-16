@@ -56,8 +56,9 @@ Kubernetes is a powerful tool for managing and orchestrating containerized appli
 #### [7. Observability](observability)
 Implement effective monitoring, logging, and tracing solutions for better system observability:
 
-  - **ELK Stack (Single Node):** Get started with a single-node setup of the ELK Stack (Elasticsearch, Logstash, Kibana). This configuration is ideal for smaller environments or development purposes. You'll learn how to centralize logs from multiple sources, process them with Logstash, and visualize them using Kibana.
-  - **ELK Stack (Multi-Node):** For production-level setups, you'll learn how to deploy an ELK multi-node cluster, ensuring high availability and scalability. This section will cover cluster architecture, index management, and performance tuning for handling large volumes of logs.
+  - **Observability full stack** This Docker project sets up a powerful observability stack using industry-standard tools for **monitoring, logging, and tracing**. It leverages Docker Compose profiles for flexible deployment, allowing you to bring up only the components you need.
+  - **VictoriaMetrics (Single Node and Multi Node):** VictoriaMetrics Monitoring Stack
+  - **ELK Stack (Single Node and Multi Node):** Get started with a single-node setup of the ELK Stack (Elasticsearch, Logstash, Kibana). This configuration is ideal for smaller environments or development purposes. You'll learn how to centralize logs from multiple sources, process them with Logstash, and visualize them using Kibana.
   - **Prometheus Stack:** Set up the Prometheus stack for metrics collection and alerting. You'll learn to monitor system and application performance, configure Alertmanager for notifications, and visualize metrics using Grafana. This stack is essential for real-time observability and proactive issue resolution.
   - **Graylog Stack:** Explore the Graylog stack for log management and analysis. Graylog simplifies log ingestion and searching with its user-friendly interface. This section will guide you through configuring Graylog to centralize and analyze logs from various sources in your infrastructure.
   - **Loki Stack:** Learn how to implement Loki for scalable log aggregation. Unlike traditional log management systems, Loki is designed to work efficiently with Prometheus and stores logs as streams associated with Prometheus metrics, optimizing storage and retrieval.
@@ -72,7 +73,7 @@ Build robust continuous integration and delivery pipelines using GitLab CI:
   - **Testing and Deployment:** Integrate automated tests and deploy applications across multiple environments.
   - **Security in Pipelines:** Add security scanning and compliance checks to your CI/CD pipelines.
 
-#### 9. Argo CD (GitOps)
+#### [9. Argo CD (GitOps)](argocd)
 Implement GitOps principles with Argo CD for continuous delivery in Kubernetes environments:
 
   - **GitOps Overview:** Understand how Argo CD applies GitOps methodologies for automated Kubernetes deployments.
@@ -94,7 +95,7 @@ Protect your critical data with effective backup strategies:
   - **Disaster Recovery Planning (DRP):** Develop a Disaster Recovery Plan (DRP) to ensure business continuity in the face of major incidents such as hardware failures, security breaches, or natural disasters. This section will guide you through setting up redundant infrastructure, automating failover processes, and conducting regular backup testing to verify recovery procedures.
   - **Ceph Backup:** Implement Ceph-based storage backup for high availability and data redundancy.
 
-#### 12. OpenStack
+#### [12. OpenStack](openstack)
 OpenStack is a powerful open-source platform for building and managing cloud computing environments. It provides a comprehensive suite of services that enables organizations to create and manage private and public clouds with scalability and flexibility. Key components include:
 
   - **Nova**: The compute service for managing virtual machines.
@@ -110,7 +111,7 @@ Ceph is a distributed storage system designed to provide highly scalable object,
   - **Ceph Single Node:** A single-node Ceph deployment is ideal for testing and development purposes. It allows users to set up a complete Ceph cluster on a single machine, enabling experimentation with all Ceph features without the complexity of a multi-node setup. This is useful for learning and understanding Ceph’s architecture and functionalities.
   - **Ceph Multi-Node:** A multi-node Ceph deployment is designed for production environments, providing high availability and scalability. In this setup, Ceph daemons are distributed across multiple nodes, allowing for efficient data replication and fault tolerance. This section will guide you through the process of configuring a multi-node Ceph cluster for optimal performance and reliability.
 
-#### 14. MinIO
+#### [14. MinIO](minio)
 MinIO is a high-performance, distributed object storage system designed for cloud-native applications. It is fully compatible with the Amazon S3 API, making it easy to integrate with various applications. Key features include:
 
   - **Scalability:** MinIO can scale out to handle petabytes of data across distributed environments.

@@ -2,12 +2,19 @@
 
 - [Cluster Setup](cluster-setup)
     - [Single Node](cluster-setup/single-node/ReadMe.md)
-    - [Single Node globals.yml](cluster-setup/single-node/globals.yml)
+      - [Single Node globals.yml](cluster-setup/single-node/globals.yml)
     - [Multi Node](cluster-setup/multi-node/ReadMe.md)
-    - [Multi Node globals.yml](cluster-setup/multi-node/globals.yml)
+      - [Multi Node globals.yml](cluster-setup/multi-node/globals.yml)
+- [Bootstrap Openstack](bootstrap-openstack)
+    - [With Ansible](bootstrap-openstack/with-ansible/ReadMe.md)
+    - [With Terraform](bootstrap-openstack/with-terraform/ReadMe.md)
+    - [With Command](bootstrap-openstack/with-command/ReadMe.md)
+- [Custom Openstack Image with Packer](custom-image-with-packer)
+    - [With Inline Script](bootstrap-openstack/custom-image-with-packer/ReadMe.md)
+    - [With External Script](bootstrap-openstack/custom-image-with-packer/with-external-script)
 - [Openstack tests](tests)
-    - [Smoke Test](tests/smoke/ReadMe.md)
-
+    - [Openstack Smoke Test](tests/smoke/ReadMe.md)
+    - [Openstack End to End Test](tests/end-to-end/ReadMe.md)
 
 
 ## 🔗 Stay connected with DockerMe! 🚀

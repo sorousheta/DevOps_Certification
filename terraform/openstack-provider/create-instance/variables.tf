@@ -1,23 +1,29 @@
 variable "image_id" {
   description = "The image id"
   type        = string
-  default     = "269fdce3-da68-4c6a-b5b4-f0535d744910"
+  default     = "4d34f5e6-e891-4fa9-ab57-b9ea203cfefb"
 }
 
-variable "flavor_id" {
-  description = "the flavor id"
+variable "flavor_name" {
+  description = "the flavor name"
   type        = string
-  default     = "ef06d321-3711-4f80-9fc3-2f74e91208d6	"
+  default     = "Small"
 }
 
 variable "key_pair_name" {
   description = "the key_pair name"
   type        = string
-  default     = "my-keypair"
+  default     = "Ahmad"
 }
 
 variable "network_name" {
   description = "the network name"
   type        = string
-  default     = "internal-network"
+  default     = "Public"
+}
+
+variable "volume_type" {
+  description = "the volume_type name"
+  type        = string
+  default     = "__DEFAULT__"
 }

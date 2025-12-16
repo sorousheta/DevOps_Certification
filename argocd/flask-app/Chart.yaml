@@ -1,0 +1,5 @@
+apiVersion: v2
+name: version-app
+description: A simple version-displaying Python app
+version: 0.1.0
+appVersion: "1.0.0"

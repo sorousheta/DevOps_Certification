@@ -1,0 +1,50 @@
+charts:
+  - name: ingress-nginx
+    repository: https://kubernetes.github.io/ingress-nginx
+    chart: ingress-nginx
+    version: "4.13.0"
+    namespace: ingress-nginx
+    values_file: ./values-ingress.yaml
+    dependencies: []
+  - name: cert-manager
+    repository: https://charts.jetstack.io
+    chart: cert-manager
+    version: "v1.18.2"
+    namespace: cert-manager
+    values_file: ./values-certmanager.yaml
+    dependencies: ["ingress-nginx"]
+  - name: minio
+    repository: https://charts.min.io/
+    chart: minio
+    version: "5.4.0"
+    namespace: minio
+    values_file: ./values-minio.yaml
+    dependencies: ["cert-manager"]
+  - name: velero
+    repository: https://vmware-tanzu.github.io/helm-charts/
+    chart: velero
+    version: "8.3.0"
+    namespace: velero
+    values_file: ./values-velero.yaml
+    dependencies: ["cert-manager"]
+  - name: loki
+    repository: https://grafana.github.io/helm-charts
+    chart: loki-stack
+    version: "2.10.2"
+    namespace: loki-stack
+    values_file: ./values-loki.yaml
+    dependencies: ["cert-manager"]
+  - name: prometheus-stack
+    repository: https://prometheus-community.github.io/helm-charts
+    chart: kube-prometheus-stack
+    version: "69.3.1"
+    namespace: monitoring
+    values_file: ./values-monitoring.yaml
+    dependencies: ["cert-manager"]
+  - name: argo-cd
+    repository: https://argoproj.github.io/argo-helm
+    chart: argo-cd
+    version: "8.1.4"
+    namespace: argo-cd
+    values_file: ./values-argocd.yaml
+    dependencies: ["cert-manager"]

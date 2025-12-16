@@ -1,0 +1,9 @@
+config:
+  name: argocd-image-updater-config
+  registries:
+    - name: MeCan Registry
+      api_url: https://registry.mecan.ir
+      ping: no
+      prefix: registry.mecan.ir
+      credentials: pullsecret:argo-cd/mecan-secret
+      credsexpire: 6h

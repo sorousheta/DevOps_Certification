@@ -26,6 +26,7 @@
       - [Deploy multiple apps with ApplicationSet across two specific clusters (Sahand \& Dena).](#deploy-multiple-apps-with-applicationset-across-two-specific-clusters-sahand--dena)
       - [Deploy voting-app with ApplicationSet across two specific clusters (Sahand \& Dena \& damavand)](#deploy-voting-app-with-applicationset-across-two-specific-clusters-sahand--dena--damavand)
   - [Add a voting application to the damavand cluster using a helm chart with `argocd` commands.](#add-a-voting-application-to-the-damavand-cluster-using-a-helm-chart-with-argocd-commands)
+  - [Argocd Image Updater Step-by-Step Guide](#argocd-image-updater-step-by-step-guide)
   - [Add the Git Repository to ArgoCD](#add-the-git-repository-to-argocd)
   - [Useful commands](#useful-commands)
   - [Good Link](#good-link)
@@ -497,6 +498,12 @@ argocd app create voting-app \
 # chcek argocd apps
 argocd app list
 ```
+
+[🔝 Back to Top](#table-of-contents)
+
+## Argocd Image Updater Step-by-Step Guide
+
+[How to Use Argo CD Image Updater with Private registry (Step-by-Step Guide)](image-updater/readme.md)
 
 [🔝 Back to Top](#table-of-contents)
 
